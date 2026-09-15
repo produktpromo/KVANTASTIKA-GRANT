@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КВАНТАСТИКА — Результат</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="logo.jpg" alt="Логотип КВАНТАСТИКА" class="logo-img">
+            <span class="logo-text">КВАНТАСТИКА</span>
+        </div>
+        <nav>
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="index.html">ГРАНТ</a>
+            <a href="#">ОТЗЫВЫ</a>
+            <a href="#">О НАС</a>
+            <a href="#">КОНТАКТЫ</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="result-block">
+            <h1>Вам одобрен грант!</h1>
+            <p class="result-grants">Осталось <span class="grants-count">3</span> гранта</p>
+
+            <div class="result-info">
+                <div class="info-row">
+                    <span class="info-label">Номер заявки:</span>
+                    <span class="info-value" id="appNumber">—</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Время заявки:</span>
+                    <span class="info-value" id="appTime">—</span>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-btn">Вернуться на главную</a>
+        </div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('appNumber').textContent = params.get('num') || '—';
+        document.getElementById('appTime').textContent = params.get('time') || '—';
+    </script>
+</body>
+</html>
+

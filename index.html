@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КВАНТАСТИКА — Гранты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="logo.jpg" alt="Логотип КВАНТАСТИКА" class="logo-img">
+            <span class="logo-text">КВАНТАСТИКА</span>
+        </div>
+        <nav>
+            <a href="#">ГЛАВНАЯ</a>
+            <a href="#">ГРАНТ</a>
+            <a href="#">ОТЗЫВЫ</a>
+            <a href="#">О НАС</a>
+            <a href="#">КОНТАКТЫ</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Заявка на грант</h1>
+
+        <div class="form-block">
+            <form id="grantForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="parent-name">ФИО родителя</label>
+                    <input type="text" id="parent-name" name="parent_name" placeholder="Иванов Иван Иванович" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-name">ФИО ученика</label>
+                    <input type="text" id="student-name" name="student_name" placeholder="Иванов Пётр Иванович" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birth-date">Дата рождения</label>
+                    <input type="date" id="birth-date" name="birth_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Город</label>
+                    <input type="text" id="city" name="city" placeholder="Москва" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="grade">Оценка за практику</label>
+                    <input type="text" id="grade" name="grade" placeholder="5/5 или отлично" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Подать заявку</button>
+            </form>
+
+            <!-- Блок «Заявка ожидает рассмотрения» — скрыт до нажатия -->
+            <div id="processingBlock" class="processing-block">
+                <div class="clock-icon">
+                    <svg viewBox="0 0 24 24" width="36" height="36">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="#805cd6" stroke-width="2"/>
+                        <line id="clockHand" x1="12" y1="12" x2="12" y2="5" stroke="#805cd6" stroke-width="2" stroke-linecap="round" transform-origin="12 12"/>
+                    </svg>
+                </div>
+                <p class="processing-text">Заявка ожидает рассмотрения</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

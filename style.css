@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --purple: #805cd6;
+    --orange: #ff914d;
+    --dark: #2b2d42;
+    --light: #ffffff;
+    --yellow: #fec341;
+}
+
+header {
+    background-color: var(--light);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+/* «КВАНТАСТИКА»: снова фиолетовый, без обводки */
+.logo-text {
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: var(--purple);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/* Кнопки меню: фиолетовая заливка, белый текст */
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--purple);
+    border-radius: 6px;
+    margin-left: 20px;
+    transition: background 0.3s, transform 0.1s;
+}
+
+nav a:hover {
+    background-color: #6a4bcb;
+    color: #ffd666; 
+}
+
+nav a:active {
+    transform: scale(0.98);
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+/* Заголовок формы: фиолетовый */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--purple);
+}
+
+.form-block {
+    background: var(--light);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fafafa;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--purple);
+    box-shadow: 0 0 0 3px rgba(128, 92, 214, 0.15);
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--purple);
+    color: var(--light);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button.submit-btn:hover {
+    background-color: #6a4bcb;
+}
+
+button.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Блок ожидания */
+.processing-block {
+    display: none;
+    text-align: center;
+    padding: 24px 0 8px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+
+.processing-block.show {
+    display: block;
+}
+
+.clock-icon {
+    margin-bottom: 12px;
+}
+
+.clock-icon svg {
+    animation: clock-tick 1s linear infinite;
+}
+
+@keyframes clock-tick {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.processing-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+/* Страница результата */
+.result-block {
+    background: var(--light);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.result-block h1 {
+    color: var(--purple);
+    margin-bottom: 12px;
+}
+
+.result-grants {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 28px;
+}
+
+.grants-count {
+    color: var(--purple);
+    font-size: 24px;
+}
+
+.result-info {
+    max-width: 400px;
+    margin: 0 auto 28px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.info-value {
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--purple);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #6a4bcb;
+}
