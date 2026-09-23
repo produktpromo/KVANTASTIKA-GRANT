@@ -438,3 +438,7 @@ color: var(--text-light);
 color: var(--yellow);
 }
 .back-btn { display: inline-block;
+           input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
