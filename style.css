@@ -504,3 +504,15 @@ button.submit-btn {
     #grantForm { grid-template-columns: 1fr; }
     .partners-title { width: 100%; text-align: center; }
 }
+/* ===== ССЫЛКА «ВЕРНУТЬСЯ НА ГЛАВНУЮ» ===== */
+.result-block a,
+.result-block a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 600;
+    transition: color .2s;
+}
+.result-block a:hover {
+    color: var(--yellow);
+}
