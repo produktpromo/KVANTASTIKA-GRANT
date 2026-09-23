@@ -451,16 +451,51 @@ button.submit-btn {
     margin-top: 6px;
     height: 48px;
 }
-
+/* ===== БАНКИ-ПАРТНЁРЫ ===== */
 .partners {
+    position: relative;
+    z-index: 3;
     width: min(760px, 100%);
-    margin: 14px 0 0;
+    margin: 14px auto 0;
     padding-top: 12px;
-    gap: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
-.partners-title { width: auto; }
+.partners-title {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-weight: 600;
+}
+.partners a.partner {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 14px 5px 5px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform .2s, border-color .2s;
+}
+.partners a.partner img {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #ffffff;
+}
+.partners a.partner:hover {
+    transform: translateY(-2px);
+    border-color: var(--yellow);
+}
 
 /* Телефон: одна колонка */
 @media (max-width: 640px) {
