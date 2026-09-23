@@ -116,7 +116,7 @@ main {
 
     min-height: 0;
 
-    margin-top: 0;
+    margin-top: 25px;
     margin-bottom: 19px;
 
     padding: 25px 30px 25px;
@@ -430,7 +430,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* ===== КОМПАКТНО: ВСЁ НА ОДИН ЭКРАН ===== */
 main { padding: 18px 30px 16px; }
-h1 { margin-bottom: 16px; font-size: 32px; }
+h1 { margin-bottom: 36px; font-size: 32px; }
 
 .form-block {
     width: min(760px, 100%);
@@ -456,7 +456,8 @@ button.submit-btn {
     position: relative;
     z-index: 3;
     width: min(760px, 100%);
-    margin: 14px auto 0;
+   margin-top: 22px;
+    margin-bottom: auto;
     padding-top: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     display: flex;
