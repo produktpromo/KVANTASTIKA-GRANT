@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const appNumber = Math.floor(Math.random() * 901) + 100; // 100–1000
             const appTime = new Date().toLocaleString('ru-RU');
             window.location.href = `result.html?num=${appNumber}&time=${encodeURIComponent(appTime)}`;
-        }, 30000); // 30 секунд
+        }, 20000); // 30 секунд
     });
 });
