@@ -466,6 +466,8 @@ button.submit-btn {
     gap: 12px;
 }
 .partners-title {
+    width: 100%;
+    text-align: center;
     color: rgba(255, 255, 255, 0.85);
     font-size: 14px;
     font-weight: 600;
