@@ -9,29 +9,32 @@
 --border: rgba(255, 255, 255, 0.38);
 }
 html { min-height: 100%; }
-body { min-height: 100vh;
-font-family: Arial, Helvetica, sans-serif;
+body {
+    height: 100vh;
+    min-height: 100vh;
 
-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
 
-background:
-    radial-gradient(
-        circle at 50% -20%,
-        #3922b0 0%,
-        #28128b 42%,
-        #18086a 100%
-    );
+    color: var(--white);
 
-display: flex;
-flex-direction: column;
+    background:
+        radial-gradient(
+            circle at 50% -20%,
+            #3922b0 0%,
+            #28128b 42%,
+            #18086a 100%
+        );
 
-overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
 }
 /* ========================================= ОБЩАЯ РАМКА САЙТА ========================================= */
 header, main { width: calc(100% - 40px); max-width: 1180px; margin-left: auto; margin-right: auto; }
 /* ========================================= HEADER ========================================= */
-header { height: 78px;
-margin-top: 28px;
+header { height: 70px;
+margin-top: 18px;
 
 padding: 0 30px;
 
@@ -107,48 +110,48 @@ color: var(--yellow);
 }
 nav a:active { transform: none; }
 /* ========================================= MAIN ========================================= */
-main { flex: 1;
-position: relative;
+main {
+    flex: 1;
 
-min-height: calc(100vh - 135px);
+    position: relative;
 
-margin-top: 0;
-margin-bottom: 28px;
+    min-height: 0;
 
-padding:
-    42px 30px 70px;
+    margin-top: 0;
+    margin-bottom: 18px;
 
-display: flex;
-flex-direction: column;
-align-items: center;
+    padding: 25px 30px 25px;
 
-background:
-    radial-gradient(
-        circle at 50% 35%,
-        rgba(57, 33, 171, 0.18),
-        transparent 58%
-    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-border:
-    1px solid var(--border);
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(57, 33, 171, 0.18),
+            transparent 58%
+        );
 
-border-top: none;
+    border: 1px solid var(--border);
 
-border-radius: 0 0 12px 12px;
+    border-top: none;
 
-overflow: hidden;
+    border-radius: 0 0 12px 12px;
+
+    overflow: hidden;
 }
 /* ========================================= ЗАГОЛОВОК ========================================= */
 h1 { position: relative; z-index: 3;
 width: 100%;
 
-margin-bottom: 35px;
+margin-bottom: 25px;
 
 text-align: center;
 
 color: var(--yellow);
 
-font-size: 30px;
+font-size: 34px;
 line-height: 1.1;
 
 font-weight: 800;
@@ -170,13 +173,13 @@ border-radius: 0;
 box-shadow: none;
 }
 /* ========================================= ПОЛЯ ========================================= */
-.form-group { margin-bottom: 18px; }
+.form-group { margin-bottom: 13px; }
 label { display: block;
 margin-bottom: 7px;
 
 color: rgba(255, 255, 255, 0.88);
 
-font-size: 11px;
+font-size: 13px;
 
 font-weight: 600;
 }
@@ -199,7 +202,7 @@ background:
 
 font-family: Arial, Helvetica, sans-serif;
 
-font-size: 12px;
+font-size: 14px;
 
 transition:
     border-color 0.2s ease,
@@ -221,7 +224,7 @@ box-shadow:
 button.submit-btn { position: relative;
 width: 100%;
 
-height: 50px;
+height: 52px;
 
 margin-top: 9px;
 
@@ -237,7 +240,7 @@ color: #28136f;
 
 font-family: Arial, Helvetica, sans-serif;
 
-font-size: 13px;
+font-size: 14px;
 
 font-weight: 800;
 
