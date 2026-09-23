@@ -437,8 +437,11 @@ color: var(--text-light);
 .info-value { font-weight: 700;
 color: var(--yellow);
 }
-.back-btn { display: inline-block;
-           input[type="date"]::-webkit-calendar-picker-indicator {
+.back-btn {
+    display: inline-block;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
