@@ -517,3 +517,29 @@ button.submit-btn {
 .result-block a:hover {
     color: var(--yellow);
 }
+/* ===== ЛОГОТИПЫ ПАРТНЁРОВ (без ссылок) ===== */
+.partners-logos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+}
+.partner-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 7px 18px;
+    background: #ffffff;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+.partner-logo img {
+    height: 100%;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+}
