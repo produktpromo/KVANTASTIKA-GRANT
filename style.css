@@ -544,14 +544,19 @@ button.submit-btn {
     background: none;
     border-radius: 0;
 }
-/* Увеличение ОТП и Финментора */
-.partners .partners-logos img[alt="OTП Банк"] {
-    height: 34px;
-    max-width: 200px;
-    transform: scale(1.4);
+/* Размеры логотипов партнёров */
+.partners .partners-logos span {
+    overflow: hidden;
 }
-.partners .partners-logos img[alt="Финментор"] {
-    height: 34px;
-    max-width: 200px;
-    transform: scale(1.6);
+.partners .partners-logos img.logo-fresh {
+    height: 22px;
+    max-width: 170px;
+}
+.partners .partners-logos img.logo-otp {
+    height: 64px;
+    max-width: none;
+}
+.partners .partners-logos img.logo-fin {
+    height: 60px;
+    max-width: none;
 }
