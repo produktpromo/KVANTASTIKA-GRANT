@@ -529,23 +529,18 @@ button.submit-btn {
 .partners .partners-logos span {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
     height: 40px;
-    padding: 5px 14px 5px 5px;
+    padding: 6px 18px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 999px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    overflow: hidden;
 }
 .partners .partners-logos img {
-    width: 28px !important;
-    height: 28px !important;
-    max-width: 28px;
-    flex-shrink: 0;
-    border-radius: 50%;
+    height: 24px;
+    width: auto;
+    max-width: 170px;
     object-fit: contain;
-    background: #ffffff;
+    background: none;
+    border-radius: 0;
 }
