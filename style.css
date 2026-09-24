@@ -557,7 +557,7 @@ button.submit-btn {
     max-width: none;
 }
 .partners .partners-logos img.logo-fin {
-    height: 34px;
+    height: 32px;
     max-width: none;
 }
 .partners .partners-logos span:has(> .logo-fin) {
