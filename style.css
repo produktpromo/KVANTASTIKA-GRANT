@@ -518,7 +518,7 @@ button.submit-btn {
     color: var(--yellow);
 }
 /* ===== ЛОГОТИПЫ ПАРТНЁРОВ (без ссылок) ===== */
-.partners-logos {
+.partners .partners-logos {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -526,10 +526,11 @@ button.submit-btn {
     align-items: center;
     gap: 12px;
 }
-.partners-logos .partner {
+.partners .partners-logos span {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    height: 40px;
     padding: 5px 14px 5px 5px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -537,10 +538,13 @@ button.submit-btn {
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
+    overflow: hidden;
 }
-.partners-logos .partner img {
-    width: 28px;
-    height: 28px;
+.partners .partners-logos img {
+    width: 28px !important;
+    height: 28px !important;
+    max-width: 28px;
+    flex-shrink: 0;
     border-radius: 50%;
     object-fit: contain;
     background: #ffffff;
